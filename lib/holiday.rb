@@ -65,13 +65,13 @@ values.each do |holiday, supplies|
   
  
    if /_/.match(holiday) 
-    holiday.sub!('_',' ')
+    holiday.to_s.sub!('_',' ')
     
 end 
   supplies_list = "#{supplies}"
 puts "#{season.capitalize}:" 
 
-puts "  #{holiday.to_s.split.map(&:capitalize).join(' ')} " + "#{supplies.join(", ")}"
+puts "  #{holiday.to_s.split.map(&:capitalize).join(' ')}: " + "#{supplies.join(", ")}"
 
 
 
