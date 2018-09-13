@@ -57,7 +57,7 @@ holiday_hash.each do |season, holidays|
 
 
 
-q
+
   
   end 
   
