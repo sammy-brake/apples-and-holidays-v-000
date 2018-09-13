@@ -55,24 +55,10 @@ holiday_hash.each do |season, holidays|
    
     
     puts "  #{holiday.to_s.split("_").map(&:capitalize).join(' ')}: " + "#{supplies.join(", ")}"
-
-
-
-
-  
   end 
   
-
-
-
-
-
  end 
 
-
-
-
-  
 end 
 
 
@@ -83,14 +69,12 @@ def all_holidays_with_bbq(holiday_hash)
   
   holiday_hash.each do |season, holidays|
  
-    holidays.each do |holiday, supplies|
+    holidays.collect do |holiday, supplies|
       
       if supplies.include?("bbq")
-        bbq_included << holiday 
+         holiday 
       else 
      end 
-      
- 
       
     end 
 
